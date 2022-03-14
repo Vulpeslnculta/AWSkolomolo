@@ -14,7 +14,7 @@
 https://15ktwrw855.execute-api.eu-central-1.amazonaws.com/api/kolo/{user_id_here}
 
 #### Example body for POST: 
-curl -H "Content-Type: application/json" -X POST -d "{\"name\" : \"Nikodem\", \"age\" : \"19\"}" 
+curl -H "Content-Type: application/json" -X POST -d "{\\"name\\" : \\"Nikodem\\", \\"age\\" : \\"19\\"}" 
 https://15ktwrw855.execute-api.eu-central-1.amazonaws.com/api/kolo
 
 #### I know it is far form perfect, but that's what I menage to do in three days, with more time and merithorical help from collegues I'll do it better and faster
