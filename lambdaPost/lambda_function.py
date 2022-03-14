@@ -25,12 +25,9 @@ def lambda_handler(event, context):
 
 
     response = {
-        'statusCode': 200,
-        'body': 'User no. ' + uid + ' created!',
-        'headers': {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*'
-        },
-    }
+        'body': 'Created user wit id: ' + uid + "  Name: " + event["name"] + ', Age: ' + event["age"] ,
 
-    return response
+    }
+    data = response['body']
+    return data
+            
