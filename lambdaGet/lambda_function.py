@@ -15,9 +15,11 @@ def lambda_handler(event, context):
     )
 
     if 'Item' in data:
+        data1 = data['Item']['name']['S']
+        data2 = data['Item']['age']['N']
         response = {
             'statusCode': 200,
-            'body': json.dumps(data),
+            'body': "{"+"\n"+"\"name\":"+json.dumps(data1)+"\n"+"\"age\":"+json.dumps(data2)+"\n"+"}",
             'headers': {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'
